@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: localhost
+    virtual-host: /
+    password: guest
+    username: guest
+    port: 5672
+
+grpc:
+  client:
+    local-grpc-server:
+      address: "static://localhost:9090"
+      enable-keep-alive: true
+
+rabbitmq:
+  queue:
+    name: notifier-queue
+  exchange:
+    name: order-notification-exchange

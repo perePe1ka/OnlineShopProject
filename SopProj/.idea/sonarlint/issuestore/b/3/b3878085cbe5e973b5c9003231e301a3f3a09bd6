@@ -1,0 +1,5 @@
+
+o
+java:S62044"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8º×Â¾·2
+Q
+java:S1144G"4Remove this unused private "convertToEntity" method.(¤øÒ§8½ÿÅ¾·2

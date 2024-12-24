@@ -1,0 +1,11 @@
+
+c
+java:S1192>"GDefine a constant instead of duplicating this literal "update" 3 times.(èƒ§!8©‡°¿·2
+i
+java:S1192?"GDefine a constant instead of duplicating this literal "delete" 3 times.(úàŸ¾ûÿÿÿÿ8©‡°¿·2
+o
+java:S6204U"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Ø÷â½·2
+p
+java:S1128	"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ö»¿ë8Í‡°¿·2
+l
+java:S1128"JRemove this unused import 'ru.vladuss.mainservice.model.OrderActionModel'.(Øªëšùÿÿÿÿ8Í‡°¿·2

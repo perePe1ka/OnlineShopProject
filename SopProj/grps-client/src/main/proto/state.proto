@@ -1,0 +1,38 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "ru.vladuss.grpsbackend";
+option java_outer_classname = "LibraryProtos";
+option optimize_for = SPEED;
+import "google/protobuf/empty.proto";
+package SopProj;
+
+service OrderCostControllerService {
+  rpc ValidateOrderCost (OrderRequest) returns (OrderResponse);
+}
+
+message OrderRequest {
+  string orderId = 1;
+  float orderCost = 2;
+  bool isDiscountWas = 3;
+  Status status = 4;
+}
+
+message OrderResponse {
+  string orderId = 1;
+  bool isSuccess = 2;
+  string message = 3;
+}
+
+enum Status {
+  ORDERED = 0;
+  CONFIRMED = 1;
+  ASSEMBLING = 2;
+  PACKED = 3;
+  SHIPPED = 4;
+  IN_TRANSIT = 5;
+  AWAITING_PICKUP = 6;
+  DELIVERED = 7;
+  CANCELED = 8;
+  RETURNED = 9;
+  NO_STATUS = 10;
+}
